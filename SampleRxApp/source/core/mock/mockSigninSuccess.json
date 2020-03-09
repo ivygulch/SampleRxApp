@@ -1,0 +1,8 @@
+{
+    "user": {
+        "id": "dummyUserID",
+        "username": "dummyUsername",
+        "firstName": "First",
+        "lastName": "Last"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "error": {
+        "code": "E001",
+        "message": "Error: invalid combination of username and password"
+    }
+}
