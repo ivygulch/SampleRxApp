@@ -29,6 +29,7 @@ public class SampleRxAppApplicationDelegate: NSObject, UIApplicationDelegate {
             RootModule.assembly,
             HomeModule.assembly,
             AuthenticationModule.assembly,
+            SettingsModule.assembly,
         ]
         AppContainer.shared.assembler.apply(assemblies: assemblies)
     }

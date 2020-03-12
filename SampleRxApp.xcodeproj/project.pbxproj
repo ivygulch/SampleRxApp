@@ -55,6 +55,16 @@
 		F8B7A408241938760098DE1A /* Optional+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A407241938760098DE1A /* Optional+extensions.swift */; };
 		F8B7A40A241939D10098DE1A /* HomeViewActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A409241939D10098DE1A /* HomeViewActions.swift */; };
 		F8B7A40C24193D440098DE1A /* String+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A40B24193D440098DE1A /* String+extensions.swift */; };
+		F8B7A4192419BC1F0098DE1A /* SettingsCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A40F2419BC1F0098DE1A /* SettingsCoordinatorType.swift */; };
+		F8B7A41A2419BC1F0098DE1A /* SettingsModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A4102419BC1F0098DE1A /* SettingsModule.swift */; };
+		F8B7A41B2419BC1F0098DE1A /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A4122419BC1F0098DE1A /* SettingsCoordinator.swift */; };
+		F8B7A41C2419BC1F0098DE1A /* SettingsModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A4132419BC1F0098DE1A /* SettingsModuleAssembly.swift */; };
+		F8B7A41D2419BC1F0098DE1A /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B7A4152419BC1F0098DE1A /* SettingsViewController.storyboard */; };
+		F8B7A41E2419BC1F0098DE1A /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A4162419BC1F0098DE1A /* SettingsViewModel.swift */; };
+		F8B7A41F2419BC1F0098DE1A /* SettingsViewActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A4172419BC1F0098DE1A /* SettingsViewActions.swift */; };
+		F8B7A4202419BC1F0098DE1A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A4182419BC1F0098DE1A /* SettingsViewController.swift */; };
+		F8B7A4222419BD0B0098DE1A /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A4212419BD0B0098DE1A /* RootTabBarController.swift */; };
+		F8B7A4242419BD8D0098DE1A /* RootTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7A4232419BD8D0098DE1A /* RootTabBarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +135,16 @@
 		F8B7A407241938760098DE1A /* Optional+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+extensions.swift"; sourceTree = "<group>"; };
 		F8B7A409241939D10098DE1A /* HomeViewActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewActions.swift; sourceTree = "<group>"; };
 		F8B7A40B24193D440098DE1A /* String+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extensions.swift"; sourceTree = "<group>"; };
+		F8B7A40F2419BC1F0098DE1A /* SettingsCoordinatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorType.swift; sourceTree = "<group>"; };
+		F8B7A4102419BC1F0098DE1A /* SettingsModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModule.swift; sourceTree = "<group>"; };
+		F8B7A4122419BC1F0098DE1A /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		F8B7A4132419BC1F0098DE1A /* SettingsModuleAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsModuleAssembly.swift; sourceTree = "<group>"; };
+		F8B7A4152419BC1F0098DE1A /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		F8B7A4162419BC1F0098DE1A /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F8B7A4172419BC1F0098DE1A /* SettingsViewActions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewActions.swift; sourceTree = "<group>"; };
+		F8B7A4182419BC1F0098DE1A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F8B7A4212419BD0B0098DE1A /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		F8B7A4232419BD8D0098DE1A /* RootTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +269,7 @@
 				F8187D692416E536001FB7E9 /* root */,
 				F8187DC524174551001FB7E9 /* authentication */,
 				F8187DAB24173F6A001FB7E9 /* home */,
+				F8B7A40D2419BC1F0098DE1A /* settings */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -275,6 +296,8 @@
 		F8187D712416ED0C001FB7E9 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F8B7A4212419BD0B0098DE1A /* RootTabBarController.swift */,
+				F8B7A4232419BD8D0098DE1A /* RootTabBarViewModel.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -407,6 +430,45 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		F8B7A40D2419BC1F0098DE1A /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7A40E2419BC1F0098DE1A /* interface */,
+				F8B7A4112419BC1F0098DE1A /* service */,
+				F8B7A4142419BC1F0098DE1A /* views */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		F8B7A40E2419BC1F0098DE1A /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7A40F2419BC1F0098DE1A /* SettingsCoordinatorType.swift */,
+				F8B7A4102419BC1F0098DE1A /* SettingsModule.swift */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+		F8B7A4112419BC1F0098DE1A /* service */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7A4122419BC1F0098DE1A /* SettingsCoordinator.swift */,
+				F8B7A4132419BC1F0098DE1A /* SettingsModuleAssembly.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		F8B7A4142419BC1F0098DE1A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F8B7A4152419BC1F0098DE1A /* SettingsViewController.storyboard */,
+				F8B7A4162419BC1F0098DE1A /* SettingsViewModel.swift */,
+				F8B7A4172419BC1F0098DE1A /* SettingsViewActions.swift */,
+				F8B7A4182419BC1F0098DE1A /* SettingsViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		FAB85F3E5D7345025F46D4D4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +565,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B7A41D2419BC1F0098DE1A /* SettingsViewController.storyboard in Resources */,
 				F8187D5E2416C6C9001FB7E9 /* LaunchScreen.storyboard in Resources */,
 				F872A7EB24181D1D00121A92 /* mockSigninSuccess.json in Resources */,
 				F865A68B2419296400B4A666 /* HomeViewController.storyboard in Resources */,
@@ -590,23 +653,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B7A4242419BD8D0098DE1A /* RootTabBarViewModel.swift in Sources */,
 				F8187D8B2416F272001FB7E9 /* AppContainer+extensions.swift in Sources */,
+				F8B7A41A2419BC1F0098DE1A /* SettingsModule.swift in Sources */,
 				F8B7A40C24193D440098DE1A /* String+extensions.swift in Sources */,
 				F8B7A40A241939D10098DE1A /* HomeViewActions.swift in Sources */,
 				F872A7F9241827AC00121A92 /* ActionDispatcher.swift in Sources */,
 				F8187DDE2417D499001FB7E9 /* CoordinatorType.swift in Sources */,
 				F865A6892419292100B4A666 /* HomeViewController.swift in Sources */,
+				F8B7A41F2419BC1F0098DE1A /* SettingsViewActions.swift in Sources */,
 				F8187DD12417459F001FB7E9 /* AuthenticationServiceType.swift in Sources */,
 				F872A7F32418227B00121A92 /* User.swift in Sources */,
 				F872A80A24183C9B00121A92 /* GenericAPIResponse.swift in Sources */,
 				F8187DB624173F6A001FB7E9 /* HomeCoordinatorType.swift in Sources */,
 				F8187D5A2416C6A2001FB7E9 /* AppDelegate.swift in Sources */,
 				F8187DB824173F6A001FB7E9 /* HomeModuleAssembly.swift in Sources */,
+				F8B7A4222419BD0B0098DE1A /* RootTabBarController.swift in Sources */,
 				F872A7EF24181D3400121A92 /* AuthenticationAPI+mock.swift in Sources */,
+				F8B7A4202419BC1F0098DE1A /* SettingsViewController.swift in Sources */,
+				F8B7A41C2419BC1F0098DE1A /* SettingsModuleAssembly.swift in Sources */,
 				F8187DCF24174552001FB7E9 /* AuthenticationModuleAssembly.swift in Sources */,
 				F8187D6E2416E79F001FB7E9 /* SampleRxAppApplicationDelegate.swift in Sources */,
 				F8187D7D2416F09C001FB7E9 /* RootModuleAssembly.swift in Sources */,
 				F8187DE02417D499001FB7E9 /* AppContainer.swift in Sources */,
+				F8B7A41E2419BC1F0098DE1A /* SettingsViewModel.swift in Sources */,
 				F872A8022418374100121A92 /* RxSwift+extensions.swift in Sources */,
 				F8187D772416ED31001FB7E9 /* RootModule.swift in Sources */,
 				F872A7FB241827F400121A92 /* AuthenticationAction.swift in Sources */,
@@ -614,6 +684,7 @@
 				F8B7A406241930F00098DE1A /* HomeViewModel.swift in Sources */,
 				F8B7A408241938760098DE1A /* Optional+extensions.swift in Sources */,
 				F8187D732416ED0C001FB7E9 /* RootCoordinator.swift in Sources */,
+				F8B7A41B2419BC1F0098DE1A /* SettingsCoordinator.swift in Sources */,
 				F8187DD72417D3F0001FB7E9 /* AuthenticationAPI.swift in Sources */,
 				F8187DB724173F6A001FB7E9 /* HomeModule.swift in Sources */,
 				F8187DE12417D499001FB7E9 /* ServiceHelper.swift in Sources */,
@@ -629,6 +700,7 @@
 				F8187DDF2417D499001FB7E9 /* ServiceType.swift in Sources */,
 				F872A80624183A1500121A92 /* Moya+extensions.swift in Sources */,
 				F872A8042418394300121A92 /* AuthenticationAPIParser.swift in Sources */,
+				F8B7A4192419BC1F0098DE1A /* SettingsCoordinatorType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

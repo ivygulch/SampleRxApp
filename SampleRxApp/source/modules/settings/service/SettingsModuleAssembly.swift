@@ -1,5 +1,5 @@
 //
-//  RootModuleAssembly.swift
+//  SettingsModuleAssembly.swift
 //  SampleRxApp
 //
 //  Created by Douglas Sjoquist on 3/11/20.
@@ -9,20 +9,19 @@
 import Foundation
 import Swinject
 
-class RootModuleAssembly: Assembly {
+class SettingsModuleAssembly: Assembly {
 
     func assemble(container: Container) {
 
         // MARK: - entry point for module
 
-        container.register(RootCoordinatorType.self) { r -> RootCoordinatorType in
+        container.register(SettingsCoordinatorType.self) { r -> SettingsCoordinatorType in
             let authenticationService = try! r.resolveRequired(AuthenticationServiceType.self)
-            return RootCoordinator(authenticationService: authenticationService,
-                                   resolver: r)
+            return SettingsCoordinator(authenticationService: authenticationService)
         }
         .inObjectScope(.container)
 
-        // MARK: - services supporting RootCoordinatorType public protocol
+        // MARK: - services supporting SettingsCoordinatorType public protocol
 
         // MARK: - For internal use
     }
