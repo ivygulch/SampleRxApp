@@ -11,6 +11,6 @@ import Swinject
 
 extension AppContainer {
 
-    public var rootCoordinator: RootCoordinatorType { return try! resolver.resolveRequired(RootCoordinatorType.self) }
+    public var rootCoordinator: RootCoordinatorType { return resolver.resolveRequired(RootCoordinatorType.self) }
 
 }

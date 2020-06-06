@@ -16,7 +16,7 @@ class SettingsModuleAssembly: Assembly {
         // MARK: - entry point for module
 
         container.register(SettingsCoordinatorType.self) { r -> SettingsCoordinatorType in
-            let authenticationService = try! r.resolveRequired(AuthenticationServiceType.self)
+            let authenticationService = r.resolveRequired(AuthenticationServiceType.self)
             return SettingsCoordinator(authenticationService: authenticationService)
         }
         .inObjectScope(.container)

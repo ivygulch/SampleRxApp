@@ -23,11 +23,11 @@ class RootCoordinator: RootCoordinatorType {
         return RootTabBarViewModel(
             isSignedIn: self.authenticationService.isSignedIn,
             signedInCoordinators: [
-                try! self.resolver.resolveRequired(HomeCoordinatorType.self),
-                try! self.resolver.resolveRequired(SettingsCoordinatorType.self)
+                self.resolver.resolveRequired(HomeCoordinatorType.self),
+                self.resolver.resolveRequired(SettingsCoordinatorType.self)
             ],
             signedOutCoordinators: [
-                try! self.resolver.resolveRequired(HomeCoordinatorType.self)
+                self.resolver.resolveRequired(HomeCoordinatorType.self)
             ]
         )
     }()

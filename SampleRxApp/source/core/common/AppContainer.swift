@@ -10,7 +10,7 @@ import Foundation
 import Swinject
 
 enum AppContainerError: Error {
-    case requiredComponent(String)
+    case generic(String)
 }
 
 public class AppContainer: NSObject {
@@ -32,11 +32,28 @@ public class AppContainer: NSObject {
 
 extension Swinject.Resolver {
 
-    func resolveRequired<T>(_ type: T.Type) throws -> T {
-        guard let result = resolve(type) else {
-            throw AppContainerError.requiredComponent(String(describing: type))
-        }
-        return result
+    func resolveRequired<Service>(_ serviceType: Service.Type) -> Service {
+        return resolve(serviceType)!
+    }
+
+    func resolveRequired<Service>(_ serviceType: Service.Type, name: String?) -> Service {
+        return resolve(serviceType, name: name)!
+    }
+
+    func resolveRequired<Service, Arg1>(_ serviceType: Service.Type, argument: Arg1) -> Service {
+        return resolve(serviceType, argument: argument)!
+    }
+
+    func resolveRequired<Service, Arg1>(_ serviceType: Service.Type, name: String?, argument: Arg1) -> Service {
+        return resolve(serviceType, name: name, argument: argument)!
+    }
+
+    func resolveRequired<Service, Arg1, Arg2>(_ serviceType: Service.Type, arguments arg1: Arg1, _ arg2: Arg2) -> Service {
+        return resolve(serviceType, arguments: arg1, arg2)!
+    }
+
+    func resolveRequired<Service, Arg1, Arg2>(_ serviceType: Service.Type, name: String?, arguments arg1: Arg1, _ arg2: Arg2) -> Service {
+        return resolve(serviceType, name: name, arguments: arg1, arg2)!
     }
 
 }

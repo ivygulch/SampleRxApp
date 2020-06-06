@@ -16,7 +16,7 @@ class HomeModuleAssembly: Assembly {
         // MARK: - entry point for module
 
         container.register(HomeCoordinatorType.self) { r -> HomeCoordinatorType in
-            let authenticationService = try! r.resolveRequired(AuthenticationServiceType.self)
+            let authenticationService = r.resolveRequired(AuthenticationServiceType.self)
             return HomeCoordinator(authenticationService: authenticationService)
         }
         .inObjectScope(.container)

@@ -16,7 +16,7 @@ class RootModuleAssembly: Assembly {
         // MARK: - entry point for module
 
         container.register(RootCoordinatorType.self) { r -> RootCoordinatorType in
-            let authenticationService = try! r.resolveRequired(AuthenticationServiceType.self)
+            let authenticationService = r.resolveRequired(AuthenticationServiceType.self)
             return RootCoordinator(authenticationService: authenticationService,
                                    resolver: r)
         }

@@ -91,7 +91,7 @@
 		F8187D542416C6A2001FB7E9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = SampleRxApp/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		F8187D552416C6A2001FB7E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = SampleRxApp/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		F8187D5D2416C6C8001FB7E9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = SampleRxApp/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		F8187D5F2416C709001FB7E9 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		F8187D5F2416C709001FB7E9 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F8187D622416D382001FB7E9 /* SampleRxAppTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleRxAppTests.swift; sourceTree = "<group>"; };
 		F8187D6D2416E79F001FB7E9 /* SampleRxAppApplicationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRxAppApplicationDelegate.swift; sourceTree = "<group>"; };
 		F8187D702416ED0C001FB7E9 /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
